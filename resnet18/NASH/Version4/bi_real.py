@@ -62,10 +62,10 @@ class conv2d_b (nn.Conv2d):
     self.weight_binarize = weight_binarize_fn()
     self.activation_binarize = activation_binarize_fn()
   def forward(self, input):
-    b_w = self.weight
-    b_a = torch.tanh(input)
-#    b_w = self.weight_binarize(self.weight)
-#    b_a = self.activation_binarize(input)
+#    b_w = self.weight
+#    b_a = torch.tanh(input)
+    b_w = self.weight_binarize(self.weight)
+    b_a = self.activation_binarize(input)
     full_conv2d = F.conv2d(b_a, b_w, self.bias, self.stride, self.padding, self.dilation, self.groups)
     return full_conv2d
 
