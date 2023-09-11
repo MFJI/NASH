@@ -7,8 +7,6 @@ Genotype_res18 = namedtuple('Genotype_res18', 'normal0 normal1 normal2 normal3')
 
 PRIMITIVES = [
     'none',
-    'max_pool_3x3',
-    'skip_connect',
     'conv_1x1',
     'conv_3x3',
     'conv_5x5',
