@@ -10,5 +10,6 @@ The next step is to run train_imagenet.py. There is already architecture we have
 ## Pre-trained models
 The pre-trained models are in the models folder. These models are already under the architecture we trained.  
 ## FINN generation
-FINN compiler needs to be used to generate the models into hardware. https://github.com/Xilinx/finn
-The code build.py under the finn folder is needed to be run.  
+FINN compiler needs to be used to generate the models into hardware. https://github.com/Xilinx/finn  
+The code build.py under the finn folder is needed to be run to generate the bit file.  
+Alveo FPGA board is the board that needs to be used.  
