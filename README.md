@@ -5,8 +5,8 @@ The code in the resnet18 and resnet34 folders is the code for training the netwo
 Brevitas is needed to train the models. https://github.com/Xilinx/brevitas  
 A10 GPU is used in this design.  
 The environment of training is as follows:  
-  brevitas           0.8.0  
-  certifi            2022.12.7  
+    brevitas           0.8.0  
+    certifi            2022.12.7  
   charset-normalizer 3.1.0  
   dependencies       2.0.1  
   future-annotations 1.0.0  
